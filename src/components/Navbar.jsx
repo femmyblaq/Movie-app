@@ -1,14 +1,14 @@
-
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
     return (
         <header>
             <div className="nav-brand">
-                <a href="">Aptech MovieApp</a>
+                <Link href="/">Aptech MovieApp</Link>
             </div>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Favorite</a></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/favorite">Favorite</Link></li>
             </ul>
         </header>
     )
